@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/global.js" type="module"></script>
-  <script src="scripts/edit.js" type="module"></script>
+  <script src="scripts/add.js" type="module"></script>
 </head>
 <body>
   <header>
@@ -16,48 +16,45 @@
     <button class="add">&plus;</button>
   </header>
   <main>
-    <form action="edit.html">
+    <form action="add.html">
 
-      <input type="number" class="hide memberId">
-      <input type="number" class="hide squadId">
+      <h2>Add a Member</h2>
 
-      <div>
-        <h2>Editing Justin Lung</h2>
-        <img src="./assets/avatar.png" alt="avatar" class="avatar">
-      </div>
+      <label for="squadId">Squad ID</label>
+      <input type="number" name="" id="squadId" required>
 
       <label for="type">Type</label>
-      <select name="" id="type">
+      <select name="" id="type" required>
         <option value="student">Student</option>
         <option value="teacher" selected>Teacher</option>
       </select>
 
       <label for="nickname">Nickname</label>
-      <input type="text" name="" id="nickname">
+      <input type="text" name="" id="nickname" required>
 
       <label for="name">Name</label>
-      <input type="text" name="" id="name">
+      <input type="text" name="" id="name" required>
 
       <label for="prefix">Prefix</label>
-      <input type="text" name="" id="prefix">
+      <input type="text" name="" id="prefix" required>
 
       <label for="surname">Surname</label>
-      <input type="text" name="" id="surname">
+      <input type="text" name="" id="surname" required>
 
       <label for="avatar">Avatar</label>
       <div class="avatar-form">
-        <input type="text" name="" id="avatar">
-        <img src="./assets/avatar.png" alt="avatar">
+        <input type="text" name="" id="avatar" required>
+        <img src="./assets/avatar.png" alt="avatar" >
       </div>
 
       <label for="github">Github handle</label>
-      <input type="text" name="" id="github">
+      <input type="text" name="" id="github" required>
 
       <label for="bio">Bio</label>
-      <textarea name="" id="bio"></textarea>
+      <textarea name="" id="bio" required></textarea>
 
       <label for="url">URL</label>
-      <input type="text" name="" id="url">
+      <input type="text" name="" id="url" required>
 
       <button type="submit" class="submit">Edit</button>
     </form>

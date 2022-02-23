@@ -46,6 +46,10 @@ header {
   color: #fff;
 }
 
+header h1 {
+  cursor: pointer;
+}
+
 .add {
   width: 2.5rem;
   height: 2.5rem;
@@ -55,6 +59,7 @@ header {
   font-size: 2rem;
   position: relative;
   transition: .3s filter;
+  cursor: pointer;
 }
 
 .add:hover,

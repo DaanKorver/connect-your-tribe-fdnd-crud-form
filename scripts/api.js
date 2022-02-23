@@ -16,7 +16,35 @@ async function getMember(id) {
   return members.find(member => member.memberId === id)
 }
 
+async function editMember(member) {
+  const response = await fetch(`${API_URL}/member`, {
+    method: 'PATCH',
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    body: member,
+  })
+  const json = await response.json()
+  return json
+}
+
+async function addMember(member) {
+  const response = await fetch(`${API_URL}/member`, {
+    method: 'POST',
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    body: member
+  })
+  const json = await response.json()
+  return json
+}
+
 export {
   getMember,
-  getMembers
+  getMembers,
+  editMember,
+  addMember
 }

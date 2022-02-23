@@ -52,3 +52,21 @@ form div img {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.avatar-form {
+  position: relative;
+}
+
+.avatar-form::after {
+  content: 'Preview';
+  text-align: center;
+  width: 3.5em;
+  bottom: -1.5em;
+  right: 0;
+  position: absolute;
+  color: dodgerblue;
+}
+
+.hide {
+  display: none;
+}
