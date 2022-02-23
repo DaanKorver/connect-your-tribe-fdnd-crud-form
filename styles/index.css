@@ -1,0 +1,112 @@
+/* Table */
+
+table {
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+th {
+  font-size: 1.25rem;
+  padding: 1em 0;
+}
+
+td {
+  padding: .5em 0
+}
+
+td.avatar {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+td.avatar img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.actions {
+  text-align: center;
+}
+
+td.actions button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+
+td.actions button::before {
+  content: 'Edit';
+  white-space: nowrap;
+  position: absolute;
+  top: -2.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: .3em 1em;
+  border-radius: .5em;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+td.actions button::after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -1.2em;
+  z-index: -1;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+td.actions button:hover svg,
+td.actions button:focus svg  {
+  animation: shake 1s linear;
+  stroke: dodgerblue;
+}
+
+td.actions button:hover::before,
+td.actions button:hover::after,
+td.actions button:focus::before,
+td.actions button:focus::after {
+  opacity: 1;
+}
+
+td.actions svg {
+  width: 2em;
+  height: 2em;
+  object-fit: cover;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}

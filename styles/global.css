@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: calc(100vh);
+  grid-template-rows: 5em auto 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+}
+
+/* Header */
+header {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: calc(100vh);
+  grid-template-rows: 5em auto 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+}
+
+/* Header */
+header {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  color: #fff;
+}
+
+.add {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  font-size: 2rem;
+  position: relative;
+  transition: .3s filter;
+}
+
+.add:hover,
+.add:focus {
+  filter: contrast(75%);
+}
+
+.add::after {
+  content: 'Toevoegen';
+  position: absolute;
+  bottom: -1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .7rem;
+  color: #fff;
+}
+
+/* Main */
+
+main {
+  padding: 0 2em;
+  opacity: 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+footer a,
+footer a:visited {
+  color: #fff;
+}

@@ -5,20 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tribe API CRUD</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" type="module"></script>
 </head>
 <body>
   <header>
     <h1>CRUD - FDND Tribe API</h1>
+    <button class="add">&plus;</button>
   </header>
   <main>
     <table>
-      <tbody id="table-body"></tbody>
+      <tr>
+        <th>ID</th>
+        <th>Naam</th>
+        <th>Type</th>
+        <th class="actions">Acties</th>
+      </tr>
     </table>
   </main>
   <footer>
-    <p>&copy;Made By <a href="https://github.com/DaanKorver">Daan Korver</a></p>
+    <p>&copy; Made By <a href="https://github.com/DaanKorver">Daan Korver</a></p>
   </footer>
 </body>
 </html>
