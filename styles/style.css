@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: calc(100vh);
+  grid-template-rows: 5em auto 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  color: #fff;
+}
+
+/* Main */
+
+table {
+  width: 100%;
+  border-spacing: 1em 2em;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td.avatar {
+  padding: 0 3em 0 2em;
+  width: 3em;
+}
+
+td.avatar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td.avatar img {
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+footer a,
+footer a:visited {
+  color: #fff;
+}
