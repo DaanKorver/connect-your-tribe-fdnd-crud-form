@@ -1,6 +1,6 @@
 import { getMember, editMember } from './api.js'
 import { enter, leave } from './transition.js'
-import { getFormValues } from './global.js'
+import { getFormValues, transformArray } from './global.js'
 
 const nameEl = document.querySelector('h2')
 const avatarEl = document.querySelector('.avatar')
