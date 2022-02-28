@@ -70,3 +70,20 @@ form div img {
 .hide {
   display: none;
 }
+
+.githubHandle + input {
+  padding-left: 1.5em;
+}
+
+.githubHandle {
+  position: relative;
+}
+
+.githubHandle::before {
+  content: '@';
+  position: absolute;
+  left: .5em;
+  top: 2.25em;
+  color: #bbb;
+  z-index: 2;
+}
